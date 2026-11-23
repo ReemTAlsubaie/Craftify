@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add a New Offering - Craftify Club</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="add-offering-page">
+
+<header>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="images/logo.png" alt="Craftify Club Logo" class="logo">
+            <p class="brand-name">Craftify Club</p>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="offerings.html">Club Offerings</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="MemberDashboard.html">Member Dashboard</a></li>
+            <li><a href="manager-dashboard.html" class="active">Manager Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+
+<p class="breadcrumb">
+<a href="manager-dashboard.html">Manager Dashboard</a> &gt; Add a New Offering
+</p>
+
+<section class="page-intro">
+<img src="images/Add.jpg" alt="Creative Offering">
+<div>
+<h1>Add a New Offering</h1>
+<p>Add a new workshop, class, or creative activity to the club.</p>
+</div>
+</section>
+
+<form action="#" method="post" enctype="multipart/form-data" class="offering-form" novalidate>
+
+<div class="form-field">
+<label for="offering-name">Offering Name *</label>
+<input type="text" id="offering-name" name="offering-name" placeholder="Enter offering name" required>
+</div>
+
+<div class="form-field">
+<label for="offering-image">Image *</label>
+<div class="image-box">
+<p>Upload an image for your offering</p>
+<input type="file" id="offering-image" name="offering-image" accept="image/png, image/jpeg, image/webp" required>
+<p>Supported formats: JPG, PNG, JPEG</p>
+</div>
+</div>
+
+<div class="form-field">
+<label for="offering-price">Price / Registration Fee (SAR) *</label>
+<input type="number" id="offering-price" name="offering-price" min="0" step="1" placeholder="Enter price or registration fee (0 for free)" required>
+</div>
+
+<div class="form-field">
+<label for="offering-description">Description *</label>
+<textarea id="offering-description" name="offering-description" placeholder="Describe your offering" required></textarea>
+</div>
+
+<div class="form-buttons">
+<a href="manager-dashboard.html" class="cancel-button">Cancel</a>
+<button type="submit" class="submit-button">Submit</button>
+</div>
+
+</form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Craftify Club. All Rights Reserved.</p>
+
+    <p class="email">
+        Contact us:
+        <a href="mailto:info@craftifyclub.com">
+            info@craftifyclub.com
+        </a>
+        | Phone: +966 593847251
+    </p>
+</footer>
+
+<script src="script.js"></script></body>
+</html>

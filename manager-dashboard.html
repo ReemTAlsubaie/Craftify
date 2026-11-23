@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manager Dashboard - Craftify Club</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body class="manager-dashboard-page">
+
+<header>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="images/logo.png" alt="Craftify Club Logo" class="logo">
+            <p class="brand-name">Craftify Club</p>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="offerings.html">Club Offerings</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="MemberDashboard.html">Member Dashboard</a></li>
+            <li><a href="manager-dashboard.html" class="active">Manager Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="manager-page-main">
+  <div class="manager-dashboard-panel">
+
+    <div class="manager-title-row">
+      <h1>Manager Dashboard</h1>
+    </div>
+
+    <div class="manager-stats">
+      <article class="manager-stat">
+        <h2>Total Members</h2>
+        <div class="manager-stat-label">Total Members <span>♙</span></div>
+        <strong>120</strong>
+        <small>Registered club members</small>
+      </article>
+      <article class="manager-stat">
+        <h2>Active Workshops</h2>
+        <div class="manager-stat-label">Active Workshops <span>✿</span></div>
+        <strong>6</strong>
+        <small>Currently available offerings</small>
+      </article>
+      <article class="manager-stat">
+        <h2>Upcoming Events</h2>
+        <div class="manager-stat-label">Upcoming Events <span>▦</span></div>
+        <strong>4</strong>
+        <small>Scheduled club events</small>
+      </article>
+      <article class="manager-stat">
+        <h2>Average Rating</h2>
+        <div class="manager-stat-label">Average Rating <span>★</span></div>
+        <strong>4.8<em>/5</em></strong>
+        <small>Member feedback average</small>
+      </article>
+    </div>
+
+<section class="manager-panel manager-offerings-panel">
+
+              <!-- Offering here --!>
+
+
+         <!-- The Holder of the offering --!>
+
+    <div class="manager-panel-heading">
+        <div>
+            <h2>Manager's Offerings</h2>
+            <p>View all offerings added by the manager.</p>
+        </div>
+
+        <span class="manager-chip">OFFERINGS</span>
+    </div>
+
+             <!-- List of the offerings --!>
+
+    <div id="manager-offerings-list"
+         class="manager-offerings-grid">
+
+        <!-- JavaScript will display offerings here -->
+
+    </div>
+
+
+              <!-- If there is no offering --!>
+
+    <p id="no-offerings-message" class="manager-empty-message">
+        No new offerings have been added yet.
+    </p>
+
+</section>
+
+    <div class="manager-two-columns">
+      <section class="manager-panel">
+        <div class="manager-panel-heading">
+          <div>
+            <h2>Discount Code Generator</h2>
+            <p>Create a promotion for club offerings.</p>
+          </div>
+          <span class="manager-chip">PROMOTION</span>
+        </div>
+        <form action="#" method="get" class="manager-form">
+          <div class="manager-field">
+            <label for="discount-code">Discount Code</label>
+            <input id="discount-code" name="code" type="text" placeholder="e.g. CRAFT20" required>
+          </div>
+          <div class="manager-field">
+            <label for="discount-percent">Discount Percentage</label>
+            <input id="discount-percent" name="percentage" type="number" min="1" max="100" placeholder="e.g. 20" required>
+          </div>
+          <div class="manager-field">
+            <label for="discount-expiry">Expiry Date</label>
+            <input id="discount-expiry" name="expiry" type="date" required>
+          </div>
+          <button class="manager-primary-button" type="submit">Add Discount Code</button>
+        </form>
+      </section>
+
+      <section class="manager-quick-links">
+        <a href="manage-instructors.html"><strong>Manage Activity Leaders &amp; Instructors</strong><span>View and manage the team →</span></a>
+        <a href="Add-Offering.html"><strong>Add New Offering</strong><span>Create a club activity →</span></a>
+      </section>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Craftify Club. All Rights Reserved.</p>
+
+    <p class="email">
+        Contact us:
+        <a href="mailto:info@craftifyclub.com">
+            info@craftifyclub.com
+        </a>
+        | Phone: +966 593847251
+    </p>
+</footer>
+</body>
+</html>

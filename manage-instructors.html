@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Activity Leaders and Instructors - Craftify Club</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body class="manage-instructors-page">
+
+<header>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="images/logo.png" alt="Craftify Club Logo" class="logo">
+            <p class="brand-name">Craftify Club</p>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="offerings.html">Club Offerings</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="MemberDashboard.html">Member Dashboard</a></li>
+            <li><a href="manager-dashboard.html" class="active">Manager Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="manager-page-main">
+  <div class="manager-dashboard-panel">
+
+    <p class="manager-breadcrumb"><a href="manager-dashboard.html">Manager Dashboard</a> &gt; Manage Activity Leaders and Instructors</p>
+
+    <div class="manager-page-heading">
+      <h1>Manage Activity Leaders &amp; Instructors</h1>
+      <p class="manager-subtitle">View the club team and their areas of expertise.</p>
+    </div>
+
+    <div class="manager-stats manager-team-stats">
+      <article class="manager-stat">
+        <h2>Instructors</h2>
+        <div class="manager-stat-label">Instructors <span>♙</span></div>
+        <strong>8</strong>
+        <small>Registered instructors</small>
+      </article>
+      <article class="manager-stat">
+        <h2>Activity Leaders</h2>
+        <div class="manager-stat-label">Activity Leaders <span>✿</span></div>
+        <strong>4</strong>
+        <small>Leading club activities</small>
+      </article>
+      <article class="manager-stat">
+        <h2>Active Team</h2>
+        <div class="manager-stat-label">Active Team <span>✓</span></div>
+        <strong>10</strong>
+        <small>Currently active members</small>
+      </article>
+    </div>
+
+          <!-- Team Directory --!> 
+
+<section class="manager-panel manager-table-panel">
+
+      <!-- Heading befor the table --!>
+
+    <div class="manager-panel-heading">
+        <div>
+            <h2>Team Directory</h2>
+            <p>Select team members to delete them from the directory.</p>
+        </div>
+    </div>
+
+          <!-- The table --!>
+
+    <div class="manager-table-scroll">
+        <table class="manager-table">
+
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Specialty</th>
+                    <th>Offerings</th>
+                    <th>Status</th>
+                    <th>Profile</th>
+                </tr>
+            </thead>
+
+            <tbody id="team-members-list">
+                <!-- JavaScript displays team members here -->
+            </tbody>
+
+        </table>
+    </div>
+
+    <button
+        type="button"
+        id="delete-team-members"
+        class="manager-primary-button manager-delete-button">
+
+        Delete Selected
+
+    </button>
+
+</section>
+
+         <!-- Adding Team Members --!>
+
+<section class="manager-panel">
+      <div class="manager-panel-heading">
+        <div>
+          <h2>Add a Team Member</h2>
+          <p>Enter the basic details for a new activity leader or instructor.</p>
+        </div>
+      </div>
+      
+<form id="team-member-form"
+      class="manager-form manager-request-form">
+
+    <div class="manager-field">
+        <label for="instructor-name">Full Name</label>
+
+        <input
+            id="instructor-name"
+            type="text"
+            placeholder="Enter full name"
+            required>
+    </div>
+
+    <div class="manager-field">
+        <label for="instructor-email">Email</label>
+
+        <input
+            id="instructor-email"
+            type="email"
+            placeholder="name@example.com"
+            required>
+    </div>
+
+    <div class="manager-field">
+        <label for="instructor-role">Role</label>
+
+        <select id="instructor-role" required>
+            <option value="" selected disabled>Select role</option>
+            <option value="Instructor">Instructor</option>
+            <option value="Activity Leader">Activity Leader</option>
+        </select>
+    </div>
+
+    <div class="manager-field">
+        <label for="instructor-specialty">Area of Expertise</label>
+
+        <select id="instructor-specialty" required>
+            <option value="" selected disabled>Select area</option>
+            <option value="Pottery">Pottery</option>
+            <option value="Painting">Painting</option>
+            <option value="Candle Making">Candle Making</option>
+            <option value="Creative Crafts">Creative Crafts</option>
+        </select>
+    </div>
+
+    <div class="manager-field manager-field-wide">
+        <label for="instructor-bio">Short Biography</label>
+
+        <textarea
+            id="instructor-bio"
+            rows="3"
+            placeholder="Introduce the team member"
+            required></textarea>
+    </div>
+
+    <button class="manager-primary-button" type="submit">
+        Add Team Member
+    </button>
+
+</form>
+
+    </section>
+
+  </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Craftify Club. All Rights Reserved.</p>
+    <p class="email">
+        Contact us:
+        <a href="mailto:info@craftifyclub.com">
+            info@craftifyclub.com
+        </a>
+        | Phone: +966 593847251
+    </p>
+</footer>
+</body>
+</html>

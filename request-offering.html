@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request to Join an Offering - Craftify Club</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="evaluation-page request-page">
+
+<header>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="images/logo.png" alt="Craftify Club Logo" class="logo">
+            <p class="brand-name">Craftify Club</p>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="offerings.html">Club Offerings</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="MemberDashboard.html" class="active">Member Dashboard</a></li>
+            <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<p class="breadcrumb">
+    <a href="MemberDashboard.html">Member Dashboard</a> &gt; Request to Join an Offering
+</p>
+
+<section class="page-heading">
+    <h1>Request to Join an Offering</h1>
+    <p>Tell us which offering you would like to join</p>
+</section>
+
+<form action="#" method="post" class="request-form">
+
+    <div class="form-panel">
+
+        <div class="request-field">
+            <label for="offering">Offering</label>
+            <select id="offering" name="offering" required>
+                <option value="" selected disabled>Select an offering</option>
+                <option value="creative-crafts">Creative Crafts Workshop</option>
+                <option value="painting-lab">Painting Lab</option>
+                <option value="pottery-studio">Pottery Studio</option>
+            </select>
+        </div>
+
+        <div class="request-field">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="request-field">
+            <label for="preferred-date">Preferred Date</label>
+            <input type="date" id="preferred-date" name="preferred-date" required>
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+
+    </div>
+
+</form>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Craftify Club. All Rights Reserved.</p>
+
+    <p class="email">
+        Contact us:
+        <a href="mailto:info@craftifyclub.com">
+            info@craftifyclub.com
+        </a>
+        | Phone: +966 593847251
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

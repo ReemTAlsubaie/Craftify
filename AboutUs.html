@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Craftify Club</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="about-page">
+
+<header>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="images/logo.png" alt="Craftify Club Logo" class="logo">
+            <p class="brand-name">Craftify Club</p>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="offerings.html">Club Offerings</a></li>
+            <li><a href="AboutUs.html" class="active">About Us</a></li>
+            <li><a href="MemberDashboard.html">Member Dashboard</a></li>
+            <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="mission">
+    <h1>Our Mission</h1>
+    <p>
+        Craftify Club aims to encourage creativity, develop crafting skills,
+        support self-expression, and build a community where members can
+        share their handmade experiences. We bring people together through
+        workshops in pottery, painting, candle making, and more, so everyone
+        can learn something new and take home something made by hand.
+    </p>
+</section>
+
+<hr>
+
+<section class="team">
+    <h2>Our Team</h2>
+    <p class="team-hint">Click a name to view their profile. Scroll sideways to see everyone.</p>
+
+    <div class="team-list">
+
+        <div class="team-card">
+            <img src="images/instructor-lama.svg" alt="Photo of Lama Alharbi" class="team-photo">
+            <a href="profile-lama.html">Lama Alharbi</a>
+            <p>Pottery Studio</p>
+        </div>
+
+        <div class="team-card">
+            <img src="images/instructor-hessa.svg" alt="Photo of Hessa Alotaibi" class="team-photo">
+            <a href="profile-hessa.html">Hessa Alotaibi</a>
+            <p>Candle Making</p>
+        </div>
+
+        <div class="team-card">
+            <img src="images/instructor-dana.svg" alt="Photo of Dana Alqahtani" class="team-photo">
+            <a href="profile-dana.html">Dana Alqahtani</a>
+            <p>Painting Lab</p>
+        </div>
+
+        <div class="team-card">
+            <img src="images/instructor-maha.svg" alt="Photo of Maha Alsaeed" class="team-photo">
+            <a href="profile-maha.html">Maha Alsaeed</a>
+            <p>Creative Crafts Workshop</p>
+        </div>
+
+    </div>
+</section>
+
+<hr>
+
+<section class="join-team">
+    <h2>Join Our Team</h2>
+    <p class="join-intro">Love crafting and want to lead activities? Tell us about yourself!</p>
+
+    <form action="#" method="post" enctype="multipart/form-data" class="join-form" novalidate>
+
+        <div class="form-card">
+
+            <div class="form-field">
+                <label for="full-name">Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-field">
+                <label for="photo">Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/png, image/jpeg" required>
+            </div>
+
+            <div class="form-field">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" max="2008-12-31" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+
+            <div class="form-field">
+                <label for="expertise">Area of Expertise</label>
+                <select id="expertise" name="expertise" required>
+                    <option value="" selected disabled>Select an area</option>
+                    <option value="pottery">Pottery</option>
+                    <option value="painting">Painting</option>
+                    <option value="candle-making">Candle Making</option>
+                    <option value="creative-crafts">Creative Crafts</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="skills">Skills</label>
+                <input type="text" id="skills" name="skills" placeholder="Add skills" required>
+            </div>
+
+            <div class="form-field">
+                <label for="education">Education</label>
+                <input type="text" id="education" name="education" placeholder="Add Education" required>
+            </div>
+
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Craftify Club. All Rights Reserved.</p>
+
+    <p class="email">
+        Contact us:
+        <a href="mailto:info@craftifyclub.com">
+            info@craftifyclub.com
+        </a>
+        | Phone: +966 593847251
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

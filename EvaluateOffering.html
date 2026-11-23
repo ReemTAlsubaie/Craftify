@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evaluate Offering - Craftify Club</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="evaluation-page">
+
+<header>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="images/logo.png" alt="Craftify Club Logo" class="logo">
+            <p class="brand-name">Craftify Club</p>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="offerings.html">Club Offerings</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="MemberDashboard.html" class="active">Member Dashboard</a></li>
+            <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<p class="breadcrumb">
+    <a href="MemberDashboard.html">Member Dashboard</a> &gt; Evaluate Offering
+</p>
+
+<section class="page-heading">
+    <h1>Evaluate Offering</h1>
+    <p>Let us know what you think</p>
+</section>
+
+<form action="#" method="post" class="evaluation-form" id="evaluation-form" novalidate>
+
+    <div class="select-row">
+        <label for="offering" class="sr-only">Previous offering</label>
+        <select id="offering" name="offering" required>
+            <option value="" selected disabled>Select Previous Offering</option>
+            <option value="creative-crafts">Creative Crafts Workshop</option>
+            <option value="painting-lab">Painting Lab</option>
+        </select>
+    </div>
+
+    <div class="form-panel">
+
+        <fieldset class="rating-group">
+            <legend>Rating</legend>
+
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5" title="5 stars">&#9733;</label>
+
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="4 stars">&#9733;</label>
+
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="3 stars">&#9733;</label>
+
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="2 stars">&#9733;</label>
+
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" title="1 star">&#9733;</label>
+            </div>
+        </fieldset>
+
+        <div class="feedback-group">
+            <label for="feedback">Feedback</label>
+            <textarea id="feedback" name="feedback" rows="10" placeholder="write your feedback here..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+
+    </div>
+
+</form>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Craftify Club. All Rights Reserved.</p>
+
+    <p class="email">
+        Contact us:
+        <a href="mailto:info@craftifyclub.com">
+            info@craftifyclub.com
+        </a>
+        | Phone: +966 593847251
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

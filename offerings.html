@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Club Offerings - Craftify Club</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="offerings-page">
+
+<header>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="images/logo.png" alt="Craftify Club Logo" class="logo">
+            <p class="brand-name">Craftify Club</p>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="offerings.html" class="active">Club Offerings</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="MemberDashboard.html">Member Dashboard</a></li>
+            <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<section class="offerings-intro">
+    <img src="images/offering.jpg" alt="Creative Crafts">
+    <div class="offerings-intro-text">
+        <h1>Club Offerings</h1>
+        <p>Explore our creative offerings and find the perfect workshop or<br> activity for you!</p>
+    </div>
+</section>
+
+
+<div class="sorting">
+    <span>Sort by:</span>
+<select id="sort-name" name="sort-name" class="sort-select">
+    <option value="name" selected>Name</option>
+    <option value="name-a-z">A – Z</option>
+    <option value="name-z-a">Z – A</option>
+</select>
+
+<select  id="sort-price" name="sort-price" class="sort-select">
+    <option value="price" selected>Price</option>
+    <option value="price-low-high">Low to High</option>
+    <option value="price-high-low">High to Low</option>
+</select>
+</div>
+
+
+<section class="offerings-list">
+    <h2>Offerings List</h2>
+
+<div class="offering">
+<img src="images/craft.png" alt="Creative Crafts Workshop">
+<div class="offering-info">
+<h2>Creative Crafts Workshop</h2>
+<p>Learn different creative crafting techniques in a fun and friendly environment.</p>
+<span class="category">Crafts</span>
+<span class="price">Price: SAR 80</span>
+</div>
+</div>
+
+<div class="offering">
+<img src="images/painting.png" alt="Painting Lab">
+<div class="offering-info">
+<h2>Painting Lab</h2>
+<p>Learn painting techniques, colours, and creative expression.</p>
+<span class="category">Painting</span>
+<span class="price">Price: SAR 120</span>
+</div>
+</div>
+
+<div class="offering">
+<img src="images/pottery.png" alt="Pottery Studio">
+<div class="offering-info">
+<h2>Pottery Studio</h2>
+<p>Learn pottery techniques and create your own ceramic pieces.</p>
+<span class="category">Pottery</span>
+<span class="price">Price: SAR 150</span>
+</div>
+</div>
+
+
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Craftify Club. All Rights Reserved.</p>
+
+    <p class="email">
+        Contact us:
+        <a href="mailto:info@craftifyclub.com">
+            info@craftifyclub.com
+        </a>
+        | Phone: +966 593847251
+    </p>
+</footer>
+
+<script src="script.js"></script> </body>
+</html>
